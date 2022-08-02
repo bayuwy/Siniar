@@ -9,14 +9,17 @@
 /* Begin PBXBuildFile section */
 		3A83C76928995AFA007AB7CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A83C76828995AFA007AB7CE /* AppDelegate.swift */; };
 		3A83C76B28995AFA007AB7CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A83C76A28995AFA007AB7CE /* SceneDelegate.swift */; };
-		3A83C76D28995AFA007AB7CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A83C76C28995AFA007AB7CE /* ViewController.swift */; };
-		3A83C77028995AFA007AB7CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A83C76E28995AFA007AB7CE /* Main.storyboard */; };
 		3A83C77328995AFA007AB7CE /* Siniar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A83C77128995AFA007AB7CE /* Siniar.xcdatamodeld */; };
 		3A83C77528995AFC007AB7CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A83C77428995AFC007AB7CE /* Assets.xcassets */; };
 		3A83C77828995AFC007AB7CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A83C77628995AFC007AB7CE /* LaunchScreen.storyboard */; };
 		3A83C78328995AFD007AB7CE /* SiniarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A83C78228995AFD007AB7CE /* SiniarTests.swift */; };
 		3A83C78D28995AFD007AB7CE /* SiniarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A83C78C28995AFD007AB7CE /* SiniarUITests.swift */; };
 		3A83C78F28995AFD007AB7CE /* SiniarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A83C78E28995AFD007AB7CE /* SiniarUITestsLaunchTests.swift */; };
+		3A83C79F28995C6F007AB7CE /* FtuxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A83C79E28995C6F007AB7CE /* FtuxViewController.swift */; };
+		3A83C7A22899624D007AB7CE /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A83C7A12899624D007AB7CE /* ColorExtensions.swift */; };
+		3A83C7A528996431007AB7CE /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A83C7A428996431007AB7CE /* PrimaryButton.swift */; };
+		3A83C7A728996600007AB7CE /* SmallPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A83C7A628996600007AB7CE /* SmallPrimaryButton.swift */; };
+		3A83C7A928996C9E007AB7CE /* FtuxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A83C7A828996C9E007AB7CE /* FtuxViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +43,6 @@
 		3A83C76528995AFA007AB7CE /* Siniar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Siniar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A83C76828995AFA007AB7CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A83C76A28995AFA007AB7CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3A83C76C28995AFA007AB7CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3A83C76F28995AFA007AB7CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A83C77228995AFA007AB7CE /* Siniar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Siniar.xcdatamodel; sourceTree = "<group>"; };
 		3A83C77428995AFC007AB7CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A83C77728995AFC007AB7CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +52,11 @@
 		3A83C78828995AFD007AB7CE /* SiniarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SiniarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A83C78C28995AFD007AB7CE /* SiniarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiniarUITests.swift; sourceTree = "<group>"; };
 		3A83C78E28995AFD007AB7CE /* SiniarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiniarUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3A83C79E28995C6F007AB7CE /* FtuxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FtuxViewController.swift; sourceTree = "<group>"; };
+		3A83C7A12899624D007AB7CE /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		3A83C7A428996431007AB7CE /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		3A83C7A628996600007AB7CE /* SmallPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallPrimaryButton.swift; sourceTree = "<group>"; };
+		3A83C7A828996C9E007AB7CE /* FtuxViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FtuxViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +109,7 @@
 			children = (
 				3A83C76828995AFA007AB7CE /* AppDelegate.swift */,
 				3A83C76A28995AFA007AB7CE /* SceneDelegate.swift */,
-				3A83C76C28995AFA007AB7CE /* ViewController.swift */,
-				3A83C76E28995AFA007AB7CE /* Main.storyboard */,
+				3A83C79B28995C28007AB7CE /* Classes */,
 				3A83C77428995AFC007AB7CE /* Assets.xcassets */,
 				3A83C77628995AFC007AB7CE /* LaunchScreen.storyboard */,
 				3A83C77928995AFC007AB7CE /* Info.plist */,
@@ -128,6 +133,50 @@
 				3A83C78E28995AFD007AB7CE /* SiniarUITestsLaunchTests.swift */,
 			);
 			path = SiniarUITests;
+			sourceTree = "<group>";
+		};
+		3A83C79B28995C28007AB7CE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3A83C7A3289963F2007AB7CE /* Views */,
+				3A83C7A028996236007AB7CE /* Extensions */,
+				3A83C79C28995C3C007AB7CE /* Modules */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3A83C79C28995C3C007AB7CE /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3A83C79D28995C47007AB7CE /* Ftux */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		3A83C79D28995C47007AB7CE /* Ftux */ = {
+			isa = PBXGroup;
+			children = (
+				3A83C79E28995C6F007AB7CE /* FtuxViewController.swift */,
+				3A83C7A828996C9E007AB7CE /* FtuxViewCell.swift */,
+			);
+			path = Ftux;
+			sourceTree = "<group>";
+		};
+		3A83C7A028996236007AB7CE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3A83C7A12899624D007AB7CE /* ColorExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3A83C7A3289963F2007AB7CE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3A83C7A428996431007AB7CE /* PrimaryButton.swift */,
+				3A83C7A628996600007AB7CE /* SmallPrimaryButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +285,6 @@
 			files = (
 				3A83C77828995AFC007AB7CE /* LaunchScreen.storyboard in Resources */,
 				3A83C77528995AFC007AB7CE /* Assets.xcassets in Resources */,
-				3A83C77028995AFA007AB7CE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +309,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A83C76D28995AFA007AB7CE /* ViewController.swift in Sources */,
+				3A83C7A528996431007AB7CE /* PrimaryButton.swift in Sources */,
 				3A83C77328995AFA007AB7CE /* Siniar.xcdatamodeld in Sources */,
+				3A83C7A22899624D007AB7CE /* ColorExtensions.swift in Sources */,
+				3A83C79F28995C6F007AB7CE /* FtuxViewController.swift in Sources */,
+				3A83C7A728996600007AB7CE /* SmallPrimaryButton.swift in Sources */,
 				3A83C76928995AFA007AB7CE /* AppDelegate.swift in Sources */,
 				3A83C76B28995AFA007AB7CE /* SceneDelegate.swift in Sources */,
+				3A83C7A928996C9E007AB7CE /* FtuxViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +353,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3A83C76E28995AFA007AB7CE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3A83C76F28995AFA007AB7CE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3A83C77628995AFC007AB7CE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -446,9 +490,10 @@
 				INFOPLIST_FILE = Siniar/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,7 +503,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -474,9 +519,10 @@
 				INFOPLIST_FILE = Siniar/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -486,7 +532,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
