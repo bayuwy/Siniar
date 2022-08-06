@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A787FB8289E8EAD00C334A6 /* Ftux.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A787FB7289E8EAD00C334A6 /* Ftux.swift */; };
 		3A83C76928995AFA007AB7CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A83C76828995AFA007AB7CE /* AppDelegate.swift */; };
 		3A83C76B28995AFA007AB7CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A83C76A28995AFA007AB7CE /* SceneDelegate.swift */; };
 		3A83C77328995AFA007AB7CE /* Siniar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A83C77128995AFA007AB7CE /* Siniar.xcdatamodeld */; };
@@ -20,6 +21,12 @@
 		3A83C7A528996431007AB7CE /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A83C7A428996431007AB7CE /* PrimaryButton.swift */; };
 		3A83C7A728996600007AB7CE /* SmallPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A83C7A628996600007AB7CE /* SmallPrimaryButton.swift */; };
 		3A83C7A928996C9E007AB7CE /* FtuxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A83C7A828996C9E007AB7CE /* FtuxViewCell.swift */; };
+		3ACA00D2289E9E650081F68F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA00D1289E9E650081F68F /* MainViewController.swift */; };
+		3ACA00D5289EA0610081F68F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA00D4289EA0610081F68F /* HomeViewController.swift */; };
+		3ACA00D8289EA08F0081F68F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA00D7289EA08F0081F68F /* SearchViewController.swift */; };
+		3ACA00DB289EA0B20081F68F /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA00DA289EA0B20081F68F /* AccountViewController.swift */; };
+		3ACA00DD289EA7C20081F68F /* AlbumsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA00DC289EA7C20081F68F /* AlbumsViewCell.swift */; };
+		3ACA00DF289EA9DF0081F68F /* AlbumViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA00DE289EA9DF0081F68F /* AlbumViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A787FB7289E8EAD00C334A6 /* Ftux.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ftux.swift; sourceTree = "<group>"; };
 		3A83C76528995AFA007AB7CE /* Siniar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Siniar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A83C76828995AFA007AB7CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A83C76A28995AFA007AB7CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +65,12 @@
 		3A83C7A428996431007AB7CE /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		3A83C7A628996600007AB7CE /* SmallPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallPrimaryButton.swift; sourceTree = "<group>"; };
 		3A83C7A828996C9E007AB7CE /* FtuxViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FtuxViewCell.swift; sourceTree = "<group>"; };
+		3ACA00D1289E9E650081F68F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3ACA00D4289EA0610081F68F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3ACA00D7289EA08F0081F68F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		3ACA00DA289EA0B20081F68F /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		3ACA00DC289EA7C20081F68F /* AlbumsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewCell.swift; sourceTree = "<group>"; };
+		3ACA00DE289EA9DF0081F68F /* AlbumViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +98,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A787FB6289E8EA000C334A6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3A787FB7289E8EAD00C334A6 /* Ftux.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		3A83C75C28995AFA007AB7CE = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +160,7 @@
 		3A83C79B28995C28007AB7CE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3A787FB6289E8EA000C334A6 /* Models */,
 				3A83C7A3289963F2007AB7CE /* Views */,
 				3A83C7A028996236007AB7CE /* Extensions */,
 				3A83C79C28995C3C007AB7CE /* Modules */,
@@ -148,6 +171,10 @@
 		3A83C79C28995C3C007AB7CE /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				3ACA00D9289EA0A00081F68F /* Account */,
+				3ACA00D6289EA0810081F68F /* Search */,
+				3ACA00D3289EA04E0081F68F /* Home */,
+				3ACA00D0289E9E4E0081F68F /* Main */,
 				3A83C79D28995C47007AB7CE /* Ftux */,
 			);
 			path = Modules;
@@ -177,6 +204,40 @@
 				3A83C7A628996600007AB7CE /* SmallPrimaryButton.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		3ACA00D0289E9E4E0081F68F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3ACA00D1289E9E650081F68F /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3ACA00D3289EA04E0081F68F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3ACA00D4289EA0610081F68F /* HomeViewController.swift */,
+				3ACA00DC289EA7C20081F68F /* AlbumsViewCell.swift */,
+				3ACA00DE289EA9DF0081F68F /* AlbumViewCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3ACA00D6289EA0810081F68F /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				3ACA00D7289EA08F0081F68F /* SearchViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		3ACA00D9289EA0A00081F68F /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				3ACA00DA289EA0B20081F68F /* AccountViewController.swift */,
+			);
+			path = Account;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,14 +370,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ACA00DD289EA7C20081F68F /* AlbumsViewCell.swift in Sources */,
 				3A83C7A528996431007AB7CE /* PrimaryButton.swift in Sources */,
 				3A83C77328995AFA007AB7CE /* Siniar.xcdatamodeld in Sources */,
+				3ACA00DB289EA0B20081F68F /* AccountViewController.swift in Sources */,
 				3A83C7A22899624D007AB7CE /* ColorExtensions.swift in Sources */,
 				3A83C79F28995C6F007AB7CE /* FtuxViewController.swift in Sources */,
 				3A83C7A728996600007AB7CE /* SmallPrimaryButton.swift in Sources */,
 				3A83C76928995AFA007AB7CE /* AppDelegate.swift in Sources */,
+				3ACA00D8289EA08F0081F68F /* SearchViewController.swift in Sources */,
 				3A83C76B28995AFA007AB7CE /* SceneDelegate.swift in Sources */,
+				3ACA00D5289EA0610081F68F /* HomeViewController.swift in Sources */,
+				3A787FB8289E8EAD00C334A6 /* Ftux.swift in Sources */,
 				3A83C7A928996C9E007AB7CE /* FtuxViewCell.swift in Sources */,
+				3ACA00D2289E9E650081F68F /* MainViewController.swift in Sources */,
+				3ACA00DF289EA9DF0081F68F /* AlbumViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

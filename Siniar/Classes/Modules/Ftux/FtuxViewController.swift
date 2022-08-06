@@ -12,6 +12,13 @@ class FtuxViewController: UIViewController {
     weak var pageControl: UIPageControl!
     weak var startButton: PrimaryButton!
     
+    let data: [Ftux] = [
+        Ftux(image: "img_ftux1", title: "WELCOME TO SINIAR APP", subtitle: "Make your design workflow easier and save your time"),
+        Ftux(image: "img_ftux2", title: "WELCOME TO SINIAR APP", subtitle: "Make your design workflow easier and save your time"),
+        Ftux(image: "img_ftux3", title: "WELCOME TO SINIAR APP", subtitle: "Make your design workflow easier and save your time"),
+        Ftux(image: "img_ftux4", title: "SINIAR APP", subtitle: "Lorem ipsum dolor sit amet")
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -55,7 +62,7 @@ class FtuxViewController: UIViewController {
             startButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40),
             startButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -40)
         ])
-        
+        startButton.addTarget(self, action: #selector(self.startButtonTapped(_:)), for: .touchUpInside)
         
         let pageControl = UIPageControl()
         view.addSubview(pageControl)
@@ -73,24 +80,28 @@ class FtuxViewController: UIViewController {
           pageControl.allowsContinuousInteraction = false
         }
         
-        pageControl.numberOfPages = 4
+        pageControl.numberOfPages = data.count
         pageControl.currentPage = 0
     }
-
+    
+    @objc func startButtonTapped(_ sender: Any) {
+        showMainViewController()
+    }
 }
 
 // MARK: - UICollectionViewDataSource
 extension FtuxViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return data.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ftuxCellId", for: indexPath) as! FtuxViewCell
         
-        cell.imageView.image = UIImage(named: "img_ftux1")
-        cell.titleLabel.text = "WELCOME TO SINIAR APP"
-        cell.subtitleLabel.text = "Make your design workflow easier and save your time"
+        let ftux = data[indexPath.item]
+        cell.imageView.image = UIImage(named: ftux.image)
+        cell.titleLabel.text = ftux.title
+        cell.subtitleLabel.text = ftux.subtitle
         
         return cell
     }
