@@ -23,7 +23,7 @@ class HomeViewController: UIViewController {
             navigationController?.navigationBar.prefersLargeTitles = true
         }
         
-        let tableView = UITableView(frame: .zero)
+        let tableView = UITableView(frame: .zero, style: .grouped)
         view.addSubview(tableView)
         self.tableView = tableView
         tableView.backgroundColor = .clear
@@ -36,6 +36,7 @@ class HomeViewController: UIViewController {
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
         tableView.register(AlbumsViewCell.self, forCellReuseIdentifier: "albumsCellId")
+        tableView.register(MusicViewCell.self, forCellReuseIdentifier: "musicCellId")
         tableView.dataSource = self
         tableView.delegate = self
     }
@@ -44,13 +45,15 @@ class HomeViewController: UIViewController {
 // MARK: - UITableViewDataSource
 extension HomeViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return 2
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0:
             return 1
+        case 1:
+            return 20
         default:
             return 0
         }
@@ -67,6 +70,33 @@ extension HomeViewController: UITableViewDataSource {
             
             return cell
             
+        case 1:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "musicCellId", for: indexPath) as! MusicViewCell
+            
+            cell.noLabel.text = String(format: "%2d", indexPath.row + 1)
+            cell.thumbImageView.image = UIImage(named: "img_ftux3")
+            cell.titleLabel.text = "Music at index \(indexPath.row)"
+            cell.subtitleLabel.text = "Lorem ipsum"
+            
+            cell.delegate = self
+            
+//            let value = indexPath.row % 3
+//            switch value {
+//            case 0:
+//                cell.noLabel.isHidden = true
+//                cell.subtitleLabel.isHidden = true
+//            case 1:
+//                cell.noLabel.isHidden = false
+//                cell.subtitleLabel.isHidden = true
+//            case 2:
+//                cell.noLabel.isHidden = false
+//                cell.subtitleLabel.isHidden = false
+//            default:
+//                break
+//            }
+            
+            return cell
+            
         default:
             return UITableViewCell()
         }
@@ -76,21 +106,22 @@ extension HomeViewController: UITableViewDataSource {
 // MARK: - UITableViewDelegate
 extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        let view = UIView(frame: .zero)
+        
+        let label = UILabel(frame: .zero)
+        view.addSubview(label)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            label.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24),
+            label.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20)
+        ])
+        label.textColor = UIColor.Siniar.neutral1
+        label.font = UIFont.systemFont(ofSize: 22, weight: .bold)
+        
         switch section {
         case 0:
-            let view = UIView(frame: .zero)
-            
-            let label = UILabel(frame: .zero)
-            view.addSubview(label)
-            label.translatesAutoresizingMaskIntoConstraints = false
-            NSLayoutConstraint.activate([
-                label.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24),
-                label.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20)
-            ])
-            label.textColor = UIColor.Siniar.neutral1
-            label.font = UIFont.systemFont(ofSize: 22, weight: .bold)
             label.text = "New Albums"
-            
             let button = UIButton(type: .system)
             view.addSubview(button)
             button.translatesAutoresizingMaskIntoConstraints = false
@@ -103,14 +134,28 @@ extension HomeViewController: UITableViewDelegate {
             button.setTitle("View all", for: .normal)
 //            button.addTarget(<#T##target: Any?##Any?#>, action: <#T##Selector#>, for: <#T##UIControl.Event#>)
             
-            return view
+        case 1:
+            label.text = "Recently Music"
             
         default:
-            return nil
+            break
+            
         }
+        return view
+        
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 56
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let view = UIView(frame: .zero)
+        view.backgroundColor = .clear
+        return view
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 56
     }
 }
@@ -152,5 +197,16 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 20
+    }
+}
+
+// MARK: - MusicViewCellDelegate
+extension HomeViewController: MusicViewCellDelegate {
+    func musicViewCellMoreButtonTapped(_ cell: MusicViewCell) {
+        if let indexPath = tableView.indexPath(for: cell) {
+            let alert = UIAlertController(title: "More", message: "More button at row \(indexPath.row + 1) tapped", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Oke", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
+        }
     }
 }

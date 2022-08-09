@@ -21,12 +21,16 @@
 		3A83C7A528996431007AB7CE /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A83C7A428996431007AB7CE /* PrimaryButton.swift */; };
 		3A83C7A728996600007AB7CE /* SmallPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A83C7A628996600007AB7CE /* SmallPrimaryButton.swift */; };
 		3A83C7A928996C9E007AB7CE /* FtuxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A83C7A828996C9E007AB7CE /* FtuxViewCell.swift */; };
+		3A8AF7B828A2986D00B18232 /* MusicViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8AF7B728A2986D00B18232 /* MusicViewCell.swift */; };
 		3ACA00D2289E9E650081F68F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA00D1289E9E650081F68F /* MainViewController.swift */; };
 		3ACA00D5289EA0610081F68F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA00D4289EA0610081F68F /* HomeViewController.swift */; };
 		3ACA00D8289EA08F0081F68F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA00D7289EA08F0081F68F /* SearchViewController.swift */; };
 		3ACA00DB289EA0B20081F68F /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA00DA289EA0B20081F68F /* AccountViewController.swift */; };
 		3ACA00DD289EA7C20081F68F /* AlbumsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA00DC289EA7C20081F68F /* AlbumsViewCell.swift */; };
 		3ACA00DF289EA9DF0081F68F /* AlbumViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA00DE289EA9DF0081F68F /* AlbumViewCell.swift */; };
+		568E47917ECF879567F9ACD6 /* Pods_SiniarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC3571D5C3BB35138ECB3BF /* Pods_SiniarTests.framework */; };
+		57090CE315AE5AB3199F8220 /* Pods_Siniar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F5AFA52F78DBEDD54008B54 /* Pods_Siniar.framework */; };
+		5EACE7054D6703446B370663 /* Pods_Siniar_SiniarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBDCB049B2FCE67918ECD9F1 /* Pods_Siniar_SiniarUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F5AFA52F78DBEDD54008B54 /* Pods_Siniar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Siniar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		196544EA48F440DB7F05BBED /* Pods-Siniar-SiniarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Siniar-SiniarUITests.debug.xcconfig"; path = "Target Support Files/Pods-Siniar-SiniarUITests/Pods-Siniar-SiniarUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2120870ACC55399EA03ACC9D /* Pods-Siniar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Siniar.release.xcconfig"; path = "Target Support Files/Pods-Siniar/Pods-Siniar.release.xcconfig"; sourceTree = "<group>"; };
 		3A787FB7289E8EAD00C334A6 /* Ftux.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ftux.swift; sourceTree = "<group>"; };
 		3A83C76528995AFA007AB7CE /* Siniar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Siniar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A83C76828995AFA007AB7CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,12 +72,19 @@
 		3A83C7A428996431007AB7CE /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		3A83C7A628996600007AB7CE /* SmallPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallPrimaryButton.swift; sourceTree = "<group>"; };
 		3A83C7A828996C9E007AB7CE /* FtuxViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FtuxViewCell.swift; sourceTree = "<group>"; };
+		3A8AF7B728A2986D00B18232 /* MusicViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewCell.swift; sourceTree = "<group>"; };
 		3ACA00D1289E9E650081F68F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3ACA00D4289EA0610081F68F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3ACA00D7289EA08F0081F68F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		3ACA00DA289EA0B20081F68F /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		3ACA00DC289EA7C20081F68F /* AlbumsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewCell.swift; sourceTree = "<group>"; };
 		3ACA00DE289EA9DF0081F68F /* AlbumViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewCell.swift; sourceTree = "<group>"; };
+		4401713ECA9CAED37813301A /* Pods-SiniarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiniarTests.debug.xcconfig"; path = "Target Support Files/Pods-SiniarTests/Pods-SiniarTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7BC3571D5C3BB35138ECB3BF /* Pods_SiniarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SiniarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FBDBD6FF6A44D2D5994B40C /* Pods-SiniarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiniarTests.release.xcconfig"; path = "Target Support Files/Pods-SiniarTests/Pods-SiniarTests.release.xcconfig"; sourceTree = "<group>"; };
+		B99981391E412288F8CA9A24 /* Pods-Siniar-SiniarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Siniar-SiniarUITests.release.xcconfig"; path = "Target Support Files/Pods-Siniar-SiniarUITests/Pods-Siniar-SiniarUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BBDCB049B2FCE67918ECD9F1 /* Pods_Siniar_SiniarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Siniar_SiniarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBB9DAF63A5AA24490AB24ED /* Pods-Siniar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Siniar.debug.xcconfig"; path = "Target Support Files/Pods-Siniar/Pods-Siniar.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57090CE315AE5AB3199F8220 /* Pods_Siniar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				568E47917ECF879567F9ACD6 /* Pods_SiniarTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EACE7054D6703446B370663 /* Pods_Siniar_SiniarUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +130,8 @@
 				3A83C78128995AFD007AB7CE /* SiniarTests */,
 				3A83C78B28995AFD007AB7CE /* SiniarUITests */,
 				3A83C76628995AFA007AB7CE /* Products */,
+				FAF67D32D5D64C6800A9128B /* Pods */,
+				F6C04D94EB9B38A4C52076D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -220,6 +239,7 @@
 				3ACA00D4289EA0610081F68F /* HomeViewController.swift */,
 				3ACA00DC289EA7C20081F68F /* AlbumsViewCell.swift */,
 				3ACA00DE289EA9DF0081F68F /* AlbumViewCell.swift */,
+				3A8AF7B728A2986D00B18232 /* MusicViewCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -240,6 +260,30 @@
 			path = Account;
 			sourceTree = "<group>";
 		};
+		F6C04D94EB9B38A4C52076D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F5AFA52F78DBEDD54008B54 /* Pods_Siniar.framework */,
+				BBDCB049B2FCE67918ECD9F1 /* Pods_Siniar_SiniarUITests.framework */,
+				7BC3571D5C3BB35138ECB3BF /* Pods_SiniarTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAF67D32D5D64C6800A9128B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EBB9DAF63A5AA24490AB24ED /* Pods-Siniar.debug.xcconfig */,
+				2120870ACC55399EA03ACC9D /* Pods-Siniar.release.xcconfig */,
+				196544EA48F440DB7F05BBED /* Pods-Siniar-SiniarUITests.debug.xcconfig */,
+				B99981391E412288F8CA9A24 /* Pods-Siniar-SiniarUITests.release.xcconfig */,
+				4401713ECA9CAED37813301A /* Pods-SiniarTests.debug.xcconfig */,
+				8FBDBD6FF6A44D2D5994B40C /* Pods-SiniarTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -247,9 +291,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A83C79228995AFD007AB7CE /* Build configuration list for PBXNativeTarget "Siniar" */;
 			buildPhases = (
+				FE85C41F2DDF28B5C07ACB5B /* [CP] Check Pods Manifest.lock */,
 				3A83C76128995AFA007AB7CE /* Sources */,
 				3A83C76228995AFA007AB7CE /* Frameworks */,
 				3A83C76328995AFA007AB7CE /* Resources */,
+				3F237F6F108DE1FC35484D61 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -264,6 +310,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A83C79528995AFD007AB7CE /* Build configuration list for PBXNativeTarget "SiniarTests" */;
 			buildPhases = (
+				364E4379158C72D044D090B9 /* [CP] Check Pods Manifest.lock */,
 				3A83C77A28995AFD007AB7CE /* Sources */,
 				3A83C77B28995AFD007AB7CE /* Frameworks */,
 				3A83C77C28995AFD007AB7CE /* Resources */,
@@ -282,9 +329,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A83C79828995AFD007AB7CE /* Build configuration list for PBXNativeTarget "SiniarUITests" */;
 			buildPhases = (
+				FC171063CE08022DD9F80F4A /* [CP] Check Pods Manifest.lock */,
 				3A83C78428995AFD007AB7CE /* Sources */,
 				3A83C78528995AFD007AB7CE /* Frameworks */,
 				3A83C78628995AFD007AB7CE /* Resources */,
+				081AB3945D81F517F8395B60 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -365,6 +414,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		081AB3945D81F517F8395B60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Siniar-SiniarUITests/Pods-Siniar-SiniarUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Siniar-SiniarUITests/Pods-Siniar-SiniarUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Siniar-SiniarUITests/Pods-Siniar-SiniarUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		364E4379158C72D044D090B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SiniarTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F237F6F108DE1FC35484D61 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Siniar/Pods-Siniar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Siniar/Pods-Siniar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Siniar/Pods-Siniar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC171063CE08022DD9F80F4A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Siniar-SiniarUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE85C41F2DDF28B5C07ACB5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Siniar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3A83C76128995AFA007AB7CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -380,6 +532,7 @@
 				3A83C76928995AFA007AB7CE /* AppDelegate.swift in Sources */,
 				3ACA00D8289EA08F0081F68F /* SearchViewController.swift in Sources */,
 				3A83C76B28995AFA007AB7CE /* SceneDelegate.swift in Sources */,
+				3A8AF7B828A2986D00B18232 /* MusicViewCell.swift in Sources */,
 				3ACA00D5289EA0610081F68F /* HomeViewController.swift in Sources */,
 				3A787FB8289E8EAD00C334A6 /* Ftux.swift in Sources */,
 				3A83C7A928996C9E007AB7CE /* FtuxViewCell.swift in Sources */,
@@ -548,6 +701,7 @@
 		};
 		3A83C79328995AFD007AB7CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBB9DAF63A5AA24490AB24ED /* Pods-Siniar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -577,6 +731,7 @@
 		};
 		3A83C79428995AFD007AB7CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2120870ACC55399EA03ACC9D /* Pods-Siniar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -606,6 +761,7 @@
 		};
 		3A83C79628995AFD007AB7CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4401713ECA9CAED37813301A /* Pods-SiniarTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -626,6 +782,7 @@
 		};
 		3A83C79728995AFD007AB7CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FBDBD6FF6A44D2D5994B40C /* Pods-SiniarTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -646,6 +803,7 @@
 		};
 		3A83C79928995AFD007AB7CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 196544EA48F440DB7F05BBED /* Pods-Siniar-SiniarUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -664,6 +822,7 @@
 		};
 		3A83C79A28995AFD007AB7CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B99981391E412288F8CA9A24 /* Pods-Siniar-SiniarUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
