@@ -1,16 +1,38 @@
 PODS:
+  - Alamofire (5.6.1)
+  - FeedKit (9.1.2)
   - IQKeyboardManagerSwift (6.5.10)
+  - Kingfisher (6.3.1)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (15.0.0):
+    - Moya/Core
+    - RxSwift (~> 6.0)
+  - RxSwift (6.5.0)
 
 DEPENDENCIES:
+  - FeedKit (~> 9.0)
   - IQKeyboardManagerSwift
+  - Kingfisher
+  - Moya/RxSwift (~> 15.0)
 
 SPEC REPOS:
   trunk:
+    - Alamofire
+    - FeedKit
     - IQKeyboardManagerSwift
+    - Kingfisher
+    - Moya
+    - RxSwift
 
 SPEC CHECKSUMS:
+  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  FeedKit: 71653273ab08e618cd6fd1301ca08fc02dca6a9e
   IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
+  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
 
-PODFILE CHECKSUM: 5f71b2893a5196a49cc59d01843835d10937b263
+PODFILE CHECKSUM: fe55674f78a1734a99b42f1f4bbf3c6a155fd60a
 
 COCOAPODS: 1.11.2

@@ -22,6 +22,12 @@
 		3A83C7A728996600007AB7CE /* SmallPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A83C7A628996600007AB7CE /* SmallPrimaryButton.swift */; };
 		3A83C7A928996C9E007AB7CE /* FtuxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A83C7A828996C9E007AB7CE /* FtuxViewCell.swift */; };
 		3A8AF7B828A2986D00B18232 /* MusicViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8AF7B728A2986D00B18232 /* MusicViewCell.swift */; };
+		3ABDF3F328A7DC9400216CBB /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABDF3F228A7DC9400216CBB /* Api.swift */; };
+		3ABDF3F528A7DF0B00216CBB /* ApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABDF3F428A7DF0B00216CBB /* ApiProvider.swift */; };
+		3ABDF3F728A7E1BD00216CBB /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABDF3F628A7E1BD00216CBB /* SearchResponse.swift */; };
+		3ABDF3F928A7E20900216CBB /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABDF3F828A7E20900216CBB /* Podcast.swift */; };
+		3ABDF3FB28A7EABA00216CBB /* MoyaExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABDF3FA28A7EABA00216CBB /* MoyaExtensions.swift */; };
+		3ABDF3FD28A7EBFF00216CBB /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABDF3FC28A7EBFF00216CBB /* ErrorResponse.swift */; };
 		3ACA00D2289E9E650081F68F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA00D1289E9E650081F68F /* MainViewController.swift */; };
 		3ACA00D5289EA0610081F68F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA00D4289EA0610081F68F /* HomeViewController.swift */; };
 		3ACA00D8289EA08F0081F68F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA00D7289EA08F0081F68F /* SearchViewController.swift */; };
@@ -73,6 +79,12 @@
 		3A83C7A628996600007AB7CE /* SmallPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallPrimaryButton.swift; sourceTree = "<group>"; };
 		3A83C7A828996C9E007AB7CE /* FtuxViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FtuxViewCell.swift; sourceTree = "<group>"; };
 		3A8AF7B728A2986D00B18232 /* MusicViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewCell.swift; sourceTree = "<group>"; };
+		3ABDF3F228A7DC9400216CBB /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		3ABDF3F428A7DF0B00216CBB /* ApiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProvider.swift; sourceTree = "<group>"; };
+		3ABDF3F628A7E1BD00216CBB /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		3ABDF3F828A7E20900216CBB /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
+		3ABDF3FA28A7EABA00216CBB /* MoyaExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaExtensions.swift; sourceTree = "<group>"; };
+		3ABDF3FC28A7EBFF00216CBB /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		3ACA00D1289E9E650081F68F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3ACA00D4289EA0610081F68F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3ACA00D7289EA08F0081F68F /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +131,9 @@
 			isa = PBXGroup;
 			children = (
 				3A787FB7289E8EAD00C334A6 /* Ftux.swift */,
+				3ABDF3F628A7E1BD00216CBB /* SearchResponse.swift */,
+				3ABDF3FC28A7EBFF00216CBB /* ErrorResponse.swift */,
+				3ABDF3F828A7E20900216CBB /* Podcast.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -179,6 +194,7 @@
 		3A83C79B28995C28007AB7CE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3ABDF3F128A7DC7F00216CBB /* API */,
 				3A787FB6289E8EA000C334A6 /* Models */,
 				3A83C7A3289963F2007AB7CE /* Views */,
 				3A83C7A028996236007AB7CE /* Extensions */,
@@ -212,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				3A83C7A12899624D007AB7CE /* ColorExtensions.swift */,
+				3ABDF3FA28A7EABA00216CBB /* MoyaExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -223,6 +240,15 @@
 				3A83C7A628996600007AB7CE /* SmallPrimaryButton.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		3ABDF3F128A7DC7F00216CBB /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3ABDF3F228A7DC9400216CBB /* Api.swift */,
+				3ABDF3F428A7DF0B00216CBB /* ApiProvider.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		3ACA00D0289E9E4E0081F68F /* Main */ = {
@@ -280,7 +306,6 @@
 				4401713ECA9CAED37813301A /* Pods-SiniarTests.debug.xcconfig */,
 				8FBDBD6FF6A44D2D5994B40C /* Pods-SiniarTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -522,11 +547,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ABDF3F728A7E1BD00216CBB /* SearchResponse.swift in Sources */,
 				3ACA00DD289EA7C20081F68F /* AlbumsViewCell.swift in Sources */,
 				3A83C7A528996431007AB7CE /* PrimaryButton.swift in Sources */,
 				3A83C77328995AFA007AB7CE /* Siniar.xcdatamodeld in Sources */,
 				3ACA00DB289EA0B20081F68F /* AccountViewController.swift in Sources */,
 				3A83C7A22899624D007AB7CE /* ColorExtensions.swift in Sources */,
+				3ABDF3F328A7DC9400216CBB /* Api.swift in Sources */,
 				3A83C79F28995C6F007AB7CE /* FtuxViewController.swift in Sources */,
 				3A83C7A728996600007AB7CE /* SmallPrimaryButton.swift in Sources */,
 				3A83C76928995AFA007AB7CE /* AppDelegate.swift in Sources */,
@@ -534,9 +561,13 @@
 				3A83C76B28995AFA007AB7CE /* SceneDelegate.swift in Sources */,
 				3A8AF7B828A2986D00B18232 /* MusicViewCell.swift in Sources */,
 				3ACA00D5289EA0610081F68F /* HomeViewController.swift in Sources */,
+				3ABDF3F928A7E20900216CBB /* Podcast.swift in Sources */,
 				3A787FB8289E8EAD00C334A6 /* Ftux.swift in Sources */,
 				3A83C7A928996C9E007AB7CE /* FtuxViewCell.swift in Sources */,
+				3ABDF3F528A7DF0B00216CBB /* ApiProvider.swift in Sources */,
 				3ACA00D2289E9E650081F68F /* MainViewController.swift in Sources */,
+				3ABDF3FD28A7EBFF00216CBB /* ErrorResponse.swift in Sources */,
+				3ABDF3FB28A7EABA00216CBB /* MoyaExtensions.swift in Sources */,
 				3ACA00DF289EA9DF0081F68F /* AlbumViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

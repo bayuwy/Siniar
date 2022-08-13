@@ -7,7 +7,10 @@ target 'Siniar' do
 
   # Pods for Siniar
   pod 'IQKeyboardManagerSwift'
-
+  pod 'Moya/RxSwift', '~> 15.0'
+  pod 'Kingfisher'
+  pod 'FeedKit', '~> 9.0'
+  
   target 'SiniarTests' do
     inherit! :search_paths
     # Pods for testing
