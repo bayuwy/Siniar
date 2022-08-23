@@ -135,7 +135,8 @@ extension SearchViewController: UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         
         let podcast = podcastList[indexPath.row]
-        loadRSSFeed(podcast)
+        showPodcastViewController(podcast)
+//        loadRSSFeed(podcast)
     }
 }
 
