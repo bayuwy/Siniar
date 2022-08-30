@@ -40,6 +40,8 @@
 		3ACA00DB289EA0B20081F68F /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA00DA289EA0B20081F68F /* AccountViewController.swift */; };
 		3ACA00DD289EA7C20081F68F /* AlbumsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA00DC289EA7C20081F68F /* AlbumsViewCell.swift */; };
 		3ACA00DF289EA9DF0081F68F /* AlbumViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACA00DE289EA9DF0081F68F /* AlbumViewCell.swift */; };
+		3AEC746228BE44C5009AD342 /* PlayerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEC746128BE44C5009AD342 /* PlayerProvider.swift */; };
+		3AEC746428BE46DF009AD342 /* AudioExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEC746328BE46DF009AD342 /* AudioExtensions.swift */; };
 		568E47917ECF879567F9ACD6 /* Pods_SiniarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC3571D5C3BB35138ECB3BF /* Pods_SiniarTests.framework */; };
 		57090CE315AE5AB3199F8220 /* Pods_Siniar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F5AFA52F78DBEDD54008B54 /* Pods_Siniar.framework */; };
 		5EACE7054D6703446B370663 /* Pods_Siniar_SiniarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBDCB049B2FCE67918ECD9F1 /* Pods_Siniar_SiniarUITests.framework */; };
@@ -103,6 +105,8 @@
 		3ACA00DA289EA0B20081F68F /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		3ACA00DC289EA7C20081F68F /* AlbumsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewCell.swift; sourceTree = "<group>"; };
 		3ACA00DE289EA9DF0081F68F /* AlbumViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewCell.swift; sourceTree = "<group>"; };
+		3AEC746128BE44C5009AD342 /* PlayerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerProvider.swift; sourceTree = "<group>"; };
+		3AEC746328BE46DF009AD342 /* AudioExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioExtensions.swift; sourceTree = "<group>"; };
 		4401713ECA9CAED37813301A /* Pods-SiniarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiniarTests.debug.xcconfig"; path = "Target Support Files/Pods-SiniarTests/Pods-SiniarTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7BC3571D5C3BB35138ECB3BF /* Pods_SiniarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SiniarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FBDBD6FF6A44D2D5994B40C /* Pods-SiniarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiniarTests.release.xcconfig"; path = "Target Support Files/Pods-SiniarTests/Pods-SiniarTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -206,6 +210,7 @@
 		3A83C79B28995C28007AB7CE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3AEC746028BE44B0009AD342 /* Providers */,
 				3ABDF3F128A7DC7F00216CBB /* API */,
 				3A787FB6289E8EA000C334A6 /* Models */,
 				3A83C7A3289963F2007AB7CE /* Views */,
@@ -244,6 +249,7 @@
 				3A321AF228B5237800765498 /* DateExtensions.swift */,
 				3A321AF428B5249000765498 /* DoubleExtensions.swift */,
 				3A321AF628B5256F00765498 /* StringExtensions.swift */,
+				3AEC746328BE46DF009AD342 /* AudioExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -302,6 +308,14 @@
 				3ACA00DA289EA0B20081F68F /* AccountViewController.swift */,
 			);
 			path = Account;
+			sourceTree = "<group>";
+		};
+		3AEC746028BE44B0009AD342 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				3AEC746128BE44C5009AD342 /* PlayerProvider.swift */,
+			);
+			path = Providers;
 			sourceTree = "<group>";
 		};
 		F6C04D94EB9B38A4C52076D6 /* Frameworks */ = {
@@ -585,9 +599,11 @@
 				3A83C7A928996C9E007AB7CE /* FtuxViewCell.swift in Sources */,
 				3A321AEF28B510EE00765498 /* PodcastDetailViewCell.swift in Sources */,
 				3ABDF3F528A7DF0B00216CBB /* ApiProvider.swift in Sources */,
+				3AEC746428BE46DF009AD342 /* AudioExtensions.swift in Sources */,
 				3ACA00D2289E9E650081F68F /* MainViewController.swift in Sources */,
 				3ABDF3FD28A7EBFF00216CBB /* ErrorResponse.swift in Sources */,
 				3A321AF528B5249000765498 /* DoubleExtensions.swift in Sources */,
+				3AEC746228BE44C5009AD342 /* PlayerProvider.swift in Sources */,
 				3A321AF128B51A0600765498 /* EpisodeViewCell.swift in Sources */,
 				3A321AF728B5256F00765498 /* StringExtensions.swift in Sources */,
 				3ABDF3FB28A7EABA00216CBB /* MoyaExtensions.swift in Sources */,

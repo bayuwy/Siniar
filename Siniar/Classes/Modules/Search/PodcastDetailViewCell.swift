@@ -11,7 +11,7 @@ class PodcastDetailViewCell: UITableViewCell {
     weak var artworkImageView: UIImageView!
     weak var titleLabel: UILabel!
     weak var subtitleLabel: UILabel!
-    weak var descTextView: UITextView!
+    weak var descTextView: UILabel!
     weak var genreLabel: UILabel!
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -38,7 +38,7 @@ class PodcastDetailViewCell: UITableViewCell {
 
     func setup() {
         selectionStyle = .none
-        backgroundColor = .clear
+        backgroundColor = UIColor.clear
         
         let imageView = UIImageView(frame: .zero)
         contentView.addSubview(imageView)
@@ -58,65 +58,57 @@ class PodcastDetailViewCell: UITableViewCell {
         contentView.addSubview(titleLabel)
         self.titleLabel = titleLabel
         titleLabel.textColor = UIColor.Siniar.neutral1
-        titleLabel.backgroundColor = .yellow
         titleLabel.font = UIFont.systemFont(ofSize: 16, weight: .bold)
         titleLabel.textAlignment = .center
         titleLabel.numberOfLines = 0
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 48),
-            titleLabel.trailingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: -48),
+            titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -48),
             titleLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 24),
-            titleLabel.heightAnchor.constraint(equalToConstant: 16)
         ])
         
         let subtitleLabel = UILabel(frame: .zero)
         contentView.addSubview(subtitleLabel)
         self.subtitleLabel = subtitleLabel
         subtitleLabel.textColor = UIColor.Siniar.neutral2
-        subtitleLabel.backgroundColor = .yellow
         subtitleLabel.font = UIFont.systemFont(ofSize: 12, weight: .regular)
         subtitleLabel.textAlignment = .center
         subtitleLabel.numberOfLines = 0
         subtitleLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             subtitleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 48),
-            subtitleLabel.trailingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: -48),
+            subtitleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -48),
             subtitleLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8),
-            subtitleLabel.heightAnchor.constraint(equalToConstant: 16)
         ])
         
-        let descTextView = UITextView(frame: .zero)
+        let descTextView = UILabel(frame: .zero)
         contentView.addSubview(descTextView)
         self.descTextView = descTextView
-        descTextView.isScrollEnabled = false
-        descTextView.isEditable = false
-        descTextView.font = UIFont.systemFont(ofSize: 12, weight: .regular)
         descTextView.textColor = UIColor.Siniar.neutral1
-        descTextView.backgroundColor = .yellow
+        descTextView.font = UIFont.systemFont(ofSize: 14, weight: .regular)
+        descTextView.textAlignment = .left
+        descTextView.numberOfLines = 0
         descTextView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            descTextView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 12),
-            descTextView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -12),
-            descTextView.topAnchor.constraint(equalTo: subtitleLabel.bottomAnchor, constant: 12)
+            descTextView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 24),
+            descTextView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -24),
+            descTextView.topAnchor.constraint(equalTo: subtitleLabel.bottomAnchor, constant: 24),
         ])
         
         let genreLabel = UILabel(frame: .zero)
         contentView.addSubview(genreLabel)
         self.genreLabel = genreLabel
         genreLabel.textColor = UIColor.Siniar.neutral2
-        genreLabel.backgroundColor = .yellow
         genreLabel.font = UIFont.systemFont(ofSize: 12, weight: .bold)
         genreLabel.textAlignment = .left
         genreLabel.numberOfLines = 1
         genreLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             genreLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 24),
-            genreLabel.trailingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: -24),
-            genreLabel.topAnchor.constraint(equalTo: descTextView.bottomAnchor, constant: 12),
-            genreLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -24),
-            genreLabel.heightAnchor.constraint(equalToConstant: 16)
+            genreLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -24),
+            genreLabel.topAnchor.constraint(equalTo: descTextView.bottomAnchor, constant: 16),
+            genreLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -24)
         ])
-        
     }
 }

@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol EposideViewCellDelegate: NSObjectProtocol {
+    func episodeViewCellPlayButtonTapped(_ cell: EpisodeViewCell)
+}
+
 class EpisodeViewCell: UITableViewCell {
     weak var episodeImageView: UIImageView!
     weak var dateLabel: UILabel!
@@ -14,6 +18,8 @@ class EpisodeViewCell: UITableViewCell {
     weak var descTextView: UITextView!
     weak var playButton: UIButton!
     weak var durationLabel: UILabel!
+    
+    weak var delegate: EposideViewCellDelegate?
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -131,6 +137,6 @@ class EpisodeViewCell: UITableViewCell {
     }
     
     @objc func playButtonTapped(_ sender: Any) {
-        
+        delegate?.episodeViewCellPlayButtonTapped(self)
     }
 }
